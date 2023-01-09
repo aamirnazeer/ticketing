@@ -35,7 +35,7 @@ afterAll(async () => {
 global.signin = () => {
   // build a json webtocket payload {id, email}
   const payload = {
-    id: 'asdfasdfasdf',
+    id: new mongoose.Types.ObjectId().toHexString(),
     email: 'test@test.com',
   };
 
